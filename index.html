@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 24px;
+      color: #222;
+      background: #f9f9f9;
+      line-height: 1.7;
+    }
+    h1 {
+      font-size: 2.4em;
+      color: #1a1a2e;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 1.3em;
+      color: #16213e;
+      margin: 32px 0 10px;
+    }
+    p {
+      color: #444;
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 20px;
+      color: #444;
+    }
+    ul li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: #0f3460;
+      text-decoration: none;
+      border-bottom: 1px solid #0f3460;
+    }
+    a:hover {
+      color: #e94560;
+      border-color: #e94560;
+    }
+    header {
+      background: #1a1a2e;
+      color: white;
+      padding: 32px 24px;
+      border-radius: 12px;
+      margin-bottom: 32px;
+    }
+    header p {
+      color: #ccc;
+      margin: 0;
+    }
+    section {
+      background: white;
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    nav {
+      background: #0f3460;
+      padding: 0 24px;
+      border-radius: 10px;
+      margin-bottom: 28px;
+      display: flex;
+      gap: 4px;
+      position: sticky;
+      top: 16px;
+      z-index: 100;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      border: none;
+      padding: 14px 16px;
+      font-size: 0.95em;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: white;
+      border: none;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://picsum.photos/1200/500') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 80px 24px;
+      border-radius: 12px;
+      margin-bottom: 28px;
+    }
+    .hero h2 {
+      font-size: 2em;
+      color: white;
+      margin: 0 0 12px;
+    }
+    .hero p {
+      color: #ccc;
+      font-size: 1.1em;
+      margin: 0 0 24px;
+    }
+    .hero a.btn {
+      display: inline-block;
+      background: #e94560;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1em;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .hero a.btn:hover {
+      background: #c73652;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    form input, form textarea {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1em;
+      font-family: inherit;
+      color: #333;
+      background: #fafafa;
+      transition: border-color 0.2s;
+    }
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: #0f3460;
+      background: white;
+    }
+    form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    form button {
+      align-self: flex-start;
+      background: #e94560;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    form button:hover {
+      background: #c73652;
+    }
+    footer {
+      margin-top: 40px;
+      background: #1a1a2e;
+      color: #ccc;
+      text-align: center;
+      padding: 32px 24px;
+      border-radius: 12px;
+      font-size: 0.9em;
+    }
+    footer .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 16px;
+    }
+    footer .social-links a {
+      color: #ccc;
+      border: none;
+      text-decoration: none;
+      font-size: 1.6em;
+      transition: color 0.2s;
+    }
+    footer .social-links a:hover {
+      color: #e94560;
+      border: none;
+    }
+    footer .copyright {
+      color: #666;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Build Something Great</h2>
+    <p>A simple, clean starting point for your next web project.</p>
+    <a href="#about" class="btn">Get Started</a>
+  </div>
+
+  <header>
+    <h1>Hello, World!</h1>
+    <p>Welcome to my page. This is a simple HTML page built with Claude Code.</p>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>This page demonstrates a basic web layout with some sample content.</p>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <ul>
+      <li>Clean, minimal design</li>
+      <li>Responsive layout</li>
+      <li>Easy to customize</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Get in touch at <a href="mailto:hello@example.com">hello@example.com</a> or fill out the form below.</p>
+    <form action="https://formspree.io/f/lliaszhang" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject">
+      <textarea name="message" placeholder="Your message..."></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="social-links">
+      <a href="#" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div class="copyright">&copy; 2026 My Page. All rights reserved.</div>
+  </footer>
+</body>
+</html>
