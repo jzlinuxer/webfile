@@ -56,6 +56,17 @@
       padding: 32px 24px;
       border-radius: 12px;
       margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    header img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #e94560;
+      flex-shrink: 0;
     }
     header p {
       color: #ccc;
@@ -208,8 +219,11 @@
   </div>
 
   <header>
-    <h1>Hi, I'm Jeremy.</h1>
-    <p>Welcome to my corner of the web. I'm passionate about building clean, modern web experiences.</p>
+    <img src="https://picsum.photos/seed/jeremy/200/200" alt="Profile photo">
+    <div>
+      <h1>Hi, I'm Jeremy.</h1>
+      <p>Welcome to my corner of the web. I'm passionate about building clean, modern web experiences.</p>
+    </div>
   </header>
 
   <section id="about">
